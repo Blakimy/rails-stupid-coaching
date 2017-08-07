@@ -1,0 +1,15 @@
+<p><%=@query%></p>
+<h1>you</h1>
+
+<% if @query.downcase == "i am going to work right now!"%>
+  <p> ... </p>
+<%elsif @query.end_with?("?") %>
+  <p>Silly question, get dressed and go to work!"</p>
+<%else%>
+  <p>I don't care, get dressed and go to work!</p>
+<%end%>
+
+<h1>your coatch</h1>
+
+<%= link_to "ask a question",ask_path
+%>
